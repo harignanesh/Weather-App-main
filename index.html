@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
     <title>Weather App</title>
   </head>
@@ -92,6 +97,30 @@
         </div>
       </div>
     </div>
+    <div class="parameter-container">
+
+      <!--card 1-->
+      <div class="parameter">
+          <img src="./assets/wind.png" >
+          <p>windspeed</p>
+          <p data-windspeed></p>
+      </div>
+
+      <!--card 2-->
+      <div class="parameter">
+          <img src="assets/humidity.png" >
+          <p>humidity</p>
+          <p data-humidity></p>
+      </div>
+
+      <!--card 3-->
+      <div class="parameter">
+          <img src="/assets/cloud.png" >
+          <p>Clouds</p>
+          <p data-cloudiness></p>
+      </div>
+
+  </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
@@ -99,7 +128,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
     <script src="script.js"></script>
   </body>
 </html>
